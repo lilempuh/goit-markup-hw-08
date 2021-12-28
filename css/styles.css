@@ -124,11 +124,27 @@ a {
 }
 /*------------------------------------------ MAIN -------------------------------------------*/
 .hero {
-  background-color: var(--backgroud-color);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
 }
+.hero-background {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1600px;
+  height: 600px;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/img-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(47, 48, 58, 0.4);
+}
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -166,7 +182,28 @@ a {
 .quality-element {
   width: 270px;
 }
-
+.quality-element::before {
+  content: "";
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  background: #f5f4fa;
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.antena-icon::before {
+  background-image: url(../images/antena.png);
+}
+.clock-icon::before {
+  background-image: url(../images/clock.png);
+}
+.diagrama-icon::before {
+  background-image: url(../images/diagrama.png);
+}
+.astonaut-icon::before {
+  background-image: url(../images/astonaut.png);
+}
 .quality-element:not(:nth-child(4n)) {
   margin-right: 30px;
 }
@@ -207,6 +244,7 @@ a {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
+  background: #f5f4fa;
 }
 .team-list {
   display: flex;
@@ -234,6 +272,27 @@ a {
   color: var(--text-color);
   margin-top: 10px;
 }
+.client {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.client-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.client-list {
+  display: flex;
+  align-items: center;
+}
+.client-item {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* ------------------------------------------FOOTER ----------------------------------------*/
 .footer {
   background-color: var(--backgroud-color);
