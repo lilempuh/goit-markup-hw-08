@@ -246,6 +246,9 @@ a {
   padding-bottom: 94px;
   background: #f5f4fa;
 }
+.team-blok {
+  background: #ffffff;
+}
 .team-list {
   display: flex;
   margin-right: -30px;
@@ -272,6 +275,22 @@ a {
   color: var(--text-color);
   margin-top: 10px;
 }
+.team-icon-list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 30px;
+}
+
+.team-icon-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.team-icon-item + .team-icon-item {
+  margin-left: 10px;
+  justify-self: center;
+}
+
 .client {
   padding-top: 94px;
   padding-bottom: 94px;
