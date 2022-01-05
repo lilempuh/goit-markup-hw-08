@@ -51,7 +51,6 @@ a {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  outline: 2px solid red;
 }
 /*----------------------------- HEADER ---------------------------------*/
 .header {
@@ -322,7 +321,8 @@ a {
   justify-content: center;
 }
 .client-item {
-  padding: 14px 31px;
+  width: 170px;
+  height: 92px;
 }
 .client-item + .client-item {
   margin-left: 30px;
@@ -334,6 +334,7 @@ a {
   border: 1px solid var(--color-icons);
   box-sizing: border-box;
   border-radius: 4px;
+  height: 1005;
 }
 
 .logo {
