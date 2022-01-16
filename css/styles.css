@@ -127,6 +127,7 @@ a {
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-icon {
   margin-right: 10px;
@@ -372,6 +373,7 @@ a {
   box-sizing: border-box;
   border-radius: 4px;
   height: 1005;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -504,6 +506,7 @@ a {
   margin-left: var(--portfolio-second-list-gap);
   margin-top: var(--portfolio-second-list-gap);
   justify-content: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-second-item:hover,
 .portfolio-second-item:focus {
