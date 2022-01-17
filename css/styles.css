@@ -332,7 +332,8 @@ a {
   height: 44px;
   border-radius: 50%;
   color: var(--color-icons);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team-icon {
   fill: currentColor;
@@ -372,17 +373,19 @@ a {
   border: 1px solid var(--color-icons);
   box-sizing: border-box;
   border-radius: 4px;
-  height: 1005;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 92px;
+  width: 170px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
   fill: var(--color-icons);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-logo:hover,
 .client-logo:focus {
-  border: 3px solid var(--acent-color);
+  border: 1px solid var(--acent-color);
 }
 .client-logo:hover .logo,
 .client-logo:focus .logo {
@@ -466,7 +469,7 @@ a {
   justify-content: center;
   align-items: center;
   color: var(--acent-second-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon-item + .footer-icon-item {
   margin-left: 10px;
@@ -523,7 +526,8 @@ a {
   line-height: 1.62;
   letter-spacing: 0.03em;
   background: var(--porfolio-btn-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-btn:hover,
 .portfolio-btn:focus {
