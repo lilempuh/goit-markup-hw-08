@@ -1,0 +1,38 @@
+.footer__conect-container {
+  margin-left: 93px;
+  padding-top: 12px;
+}
+.conect__title {
+  display: block;
+  margin-bottom: 20px;
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--acent-second-color);
+}
+.conect__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.conect__input {
+  padding-left: 16px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  @include font(null, 16px, 1.25, 0.03em);
+  color: var(--acent-second-color);
+}
+
+.button__conect {
+  margin-left: 12px;
+  width: 200px;
+  height: 50px;
+}
+.buttom__text {
+  margin-right: 10px;
+}
+.conect__icon {
+  fill: var(--acent-second-color);
+}
