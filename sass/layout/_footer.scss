@@ -4,7 +4,9 @@
   padding-bottom: 60px;
 }
 .footer__container {
-  display: flex;
+  @include desk {
+    display: flex;
+  }
 }
 // .footer-logo-item + .footer-logo-item {
 //   margin-left: 70px;

@@ -19,12 +19,28 @@
   @include tab {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
   @include desk {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-right: -30px;
   }
 }
+.team-list__item {
+  text-align: center;
+  @include tab {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+  @include desk {
+    margin-right: 30px;
+  }
+}
+
 .team-blok {
   background: var(--acent-second-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -42,13 +58,9 @@
 .team-cards__after-name {
   @include font(null, 16px, 1.19, 00.03em) color: var(--text-color);
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
-.team-list__item {
-  width: calc(100 / 4 - 30px);
-  margin-right: 30px;
-  text-align: center;
-}
+
 .team-icon-list {
   display: flex;
   justify-content: center;
