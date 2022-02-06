@@ -1,9 +1,14 @@
 .about {
   padding-bottom: 94px;
+  display: none;
+  @include desk {
+    display: inherit;
+  }
 }
 .about__list {
   display: flex;
   margin-right: -30px;
+  justify-content: center;
 }
 .about__item {
   width: calc(100 / 3- 30px);

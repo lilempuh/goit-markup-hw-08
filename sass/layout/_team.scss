@@ -1,20 +1,29 @@
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
   background: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desk {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .team__title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  letter-spacing: 0.03em;
+  @include font(700, 28px, 1.18, 0.03em);
   text-align: center;
   margin-bottom: 50px;
+  @include desk {
+    @include font(700, 36px, 1.17, 0.03em);
+  }
 }
 .team-list {
-  display: flex;
-  /* margin-right: -30px; */
-  justify-content: center;
+  @include tab {
+    display: flex;
+    justify-content: center;
+  }
+  @include desk {
+    display: flex;
+    justify-content: center;
+  }
 }
 .team-blok {
   background: var(--acent-second-color);
@@ -22,20 +31,18 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .team-cards {
-  padding: 30px 0;
+  padding: 30px 0 24px;
+  @include desk {
+    padding: 30px 0;
+  }
 }
 .team-cards__name {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(500, 16px, 1.19, 0.03em);
 }
 .team-cards__after-name {
-  font-size: 16px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--text-color);
+  @include font(null, 16px, 1.19, 00.03em) color: var(--text-color);
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .team-list__item {
   width: calc(100 / 4 - 30px);
@@ -45,7 +52,7 @@
 .team-icon-list {
   display: flex;
   justify-content: center;
-  padding-bottom: 30px;
+  // padding-bottom: 30px;
 }
 
 .team-icon-list__item + .team-icon-list__item {

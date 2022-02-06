@@ -1,7 +1,17 @@
 .container {
-  width: 1200px;
+  width: 100%;
   height: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+
+  @include tel {
+    width: 480px;
+  }
+  @include tab {
+    width: 768px;
+  }
+  @include desk {
+    min-width: 1600px;
+  }
 }
