@@ -1,32 +1,84 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
+
 .header__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+.menu-open-btn {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--acent-color);
+  }
+  border: none;
+  background-color: var(--acent-second-color);
+}
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
+    display: none;
+  }
+}
+.menu-open-btn-icon {
+  fill: currentColor;
 }
 
 .site-list,
 .site-list-contact {
   display: flex;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
-.site-list__item + .site-list__item,
-.site-list-contact__item + .site-list-contact__item {
+@media screen and (max-width: 768px) {
+  .site-nav {
+    display: none;
+  }
+}
+
+.site-list__item + .site-list__item {
   margin-left: 50px;
 }
-
+.site-list-contact__item + .site-list-contact__item {
+  @include desk {
+    margin-left: 50px;
+  }
+}
 .site-list-contact {
+  @media screen and (min-width: 768px) and (max-width: 1600px) {
+    display: block;
+    margin-left: 84px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
   margin-left: auto;
 }
-
+.site-list-contact__item {
+  @media screen and (min-width: 768px) and (max-width: 1600px) {
+    margin-bottom: 10px;
+  }
+}
 .logo {
   font-family: "Raleway", sans-serif;
-  @include font(700, 26px, 1.19, 0.03em);
+  @include font(700, 24px, 1.17, 0.03em);
   color: var(--acent-color);
+  @include desk {
+    @include font(700, 26px, 1.19, 0.03em);
+  }
+  @media screen and (max-width: 768px) {
+    padding: 16px 0;
+  }
 }
 .header__logo {
-  margin-right: 93px;
+  @include tab {
+    margin-right: 93px;
+  }
+  @include desk {
+    margin-right: 93px;
+  }
 }
 
 .logo__second {
@@ -47,18 +99,20 @@
 .link-current {
   color: var(--acent-color);
   position: relative;
-  &::after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-  &:hover::after {
-    background-image: url(../images/hover.png);
+  @media screen and (min-width: 678px) {
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+    }
+    &:hover::after {
+      background-image: url(../images/hover.png);
+    }
   }
 }
 
@@ -66,16 +120,18 @@
   display: flex;
   align-items: center;
   @include font(500, 14px, 1.14, 0.02em);
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: var(--acent-color);
   }
+  @include desk {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .site-list-contact__icon {
-  margin-right: 10px;
   fill: currentColor;
+  margin-right: 10px;
 }

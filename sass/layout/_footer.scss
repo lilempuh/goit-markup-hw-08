@@ -2,10 +2,19 @@
   background-color: var(--backgroud-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  @include tab {
+  }
 }
 .footer__container {
+  text-align: center;
   @include desk {
     display: flex;
+    justify-content: center;
+  }
+  @include tab {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 // .footer-logo-item + .footer-logo-item {
@@ -13,18 +22,24 @@
 // }
 .logo {
   font-family: "Raleway", sans-serif;
-  @include font(700, 26px, 1.19, 0.03em);
+  @include font(700, 24px, 1.17, 0.03em);
   color: var(--acent-color);
+  @include desk {
+    @include font(700, 26px, 1.19, 0.03em);
+  }
 }
 .footer__logo-second {
   color: var(--acent-second-color);
+}
+.logo__link {
   margin-bottom: 20px;
 }
-.footer-list {
-  margin-top: 20px;
-}
+
 .footer-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @include desk {
+    margin-bottom: 9px;
+  }
 }
 .footer-list__link-maps {
   @include font(null, 14px, 1.71, 0.03em);
@@ -40,8 +55,15 @@
   }
 }
 .footer__icon-container {
-  margin-left: 70px;
-  padding-top: 12px;
+  margin-top: 60px;
+  @include tab {
+    margin-top: 5px;
+  }
+  @include desk {
+    margin-top: 0;
+    margin-left: 70px;
+    padding-top: 12px;
+  }
 }
 .footer__icon-title {
   @include font(700, 14px, 1.17, 0.03em);
@@ -74,4 +96,15 @@
 }
 .footer-icon-list__logo-icon {
   fill: currentColor;
+}
+// .footer_tab {
+//   @include tab {
+//     display: flex;
+//     justify-content: center;
+//   }
+// }
+.footer__logo-container {
+  @include tab {
+    margin-right: 165px;
+  }
 }

@@ -1,34 +1,54 @@
 .footer__conect-container {
-  margin-left: 93px;
-  padding-top: 12px;
+  margin-top: 60px;
+  @include desk {
+    margin-left: 93px;
+    padding-top: 12px;
+    margin-top: 0;
+  }
 }
 .conect__title {
-  display: block;
   margin-bottom: 20px;
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--acent-second-color);
+  display: block;
 }
 .conect__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include desk {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 .conect__input {
   padding-left: 16px;
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
   @include font(null, 16px, 1.25, 0.03em);
   color: var(--acent-second-color);
+  margin-bottom: 20px;
+  @include tab {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include desk {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
-
+.conect__input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
 .button__conect {
-  margin-left: 12px;
+  margin: auto;
   width: 200px;
   height: 50px;
+  @include desk {
+    margin-left: 12px;
+  }
 }
 .buttom__text {
   margin-right: 10px;

@@ -33,10 +33,12 @@
 .team-list__item {
   text-align: center;
   @include tab {
+    width: calc(100% / 2 - 30px);
     margin-right: 30px;
     margin-bottom: 30px;
   }
   @include desk {
+    width: calc(100% / 4 - 30px);
     margin-right: 30px;
   }
 }
