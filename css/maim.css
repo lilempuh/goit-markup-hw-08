@@ -82,8 +82,8 @@ body {
 }
 
 .container {
-  width: 100%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -608,7 +608,7 @@ body {
 .hero__background {
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
+  max-width: 100%;
   height: 400px;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../all-images/Hero_mob_1x.jpg);
   background-repeat: no-repeat;
@@ -693,10 +693,6 @@ body {
   }
 }
 
-.quality-list {
-  display: contents;
-}
-
 @media screen and (min-width: 768px) and (max-width: 1600px) {
   .quality-list {
     display: flex;
@@ -715,7 +711,7 @@ body {
 }
 
 .quality-list__element {
-  width: 450px;
+  width: 100%;
   margin-bottom: 30px;
 }
 
@@ -910,6 +906,7 @@ body {
 .team-blok {
   background: var(--acent-second-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  width: 100%;
 }
 
 .team-cards {
@@ -1227,7 +1224,7 @@ body {
 
 .conect__input {
   padding-left: 16px;
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
