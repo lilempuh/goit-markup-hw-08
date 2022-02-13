@@ -1,5 +1,8 @@
 .header {
   border-bottom: 1px solid #ececec;
+  @media screen and (max-width: 768px) {
+    padding: 16px 0;
+  }
 }
 
 .header__container {
@@ -47,8 +50,8 @@
   margin-left: auto;
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }
 .site-list-contact__item + .site-list-contact__item {
@@ -60,6 +63,9 @@
   @include tab {
     margin-bottom: 10px;
   }
+  @include desk {
+    margin-bottom: 0;
+  }
 }
 .logo {
   font-family: "Raleway", sans-serif;
@@ -67,9 +73,6 @@
   color: var(--acent-color);
   @include desk {
     @include font(700, 26px, 1.19, 0.03em);
-  }
-  @media screen and (max-width: 768px) {
-    padding: 16px 0;
   }
 }
 .header__logo {

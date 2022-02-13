@@ -12,6 +12,7 @@
   }
   @include desk {
     flex-wrap: nowrap;
+    text-align: left;
   }
 }
 // .footer-logo-item + .footer-logo-item {

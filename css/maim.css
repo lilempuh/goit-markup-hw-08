@@ -427,6 +427,12 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 16px 0;
+  }
+}
+
 .header__container {
   display: flex;
   align-items: center;
@@ -482,8 +488,8 @@ body {
 @media screen and (min-width: 768px) and (max-width: 1200px) {
   .site-list-contact {
     display: block;
-    padding-top: 21px;
-    padding-bottom: 21px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 }
 
@@ -514,12 +520,6 @@ body {
     font-size: 26px;
     line-height: 1.19;
     letter-spacing: 0.03em;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .logo {
-    padding: 16px 0;
   }
 }
 
@@ -1028,7 +1028,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .client-list__item {
-    width: 226px;
+    width: calc(100% / 3 - 30px);
   }
 }
 
@@ -1084,6 +1084,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer__container {
     flex-wrap: nowrap;
+    text-align: left;
   }
 }
 
