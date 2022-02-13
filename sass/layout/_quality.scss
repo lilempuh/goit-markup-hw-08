@@ -18,11 +18,14 @@
   @include desk {
     display: flex;
     justify-content: center;
+    margin-left: calc(-1 * var(--portfolio-second-list-gap));
   }
 }
 .quality-list__element {
   width: 100%;
-  margin-bottom: 30px;
+  @include tel {
+    margin-bottom: 30px;
+  }
   &::before {
     content: "";
     display: block;
@@ -42,6 +45,8 @@
   }
   @include desk {
     width: 270px;
+    flex-basis: calc(100% / 4 - var(--portfolio-second-list-gap));
+    margin-left: var(--portfolio-second-list-gap);
   }
 }
 .antena-icon::before {
@@ -56,17 +61,11 @@
 .astonaut-icon::before {
   background-image: url(../images/astonaut.png);
 }
-.quality-list__element:not(:nth-child(4n)) {
-  @include desk {
-    margin-right: 30px;
-  }
-}
 
 .quality-list__title {
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   margin-bottom: 10px;
-  text-align: center;
 }
 
 .quality-list__after-title {

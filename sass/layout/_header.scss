@@ -42,22 +42,22 @@
 .site-list__item + .site-list__item {
   margin-left: 50px;
 }
+
+.site-list-contact {
+  margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
 .site-list-contact__item + .site-list-contact__item {
   @include desk {
     margin-left: 50px;
   }
 }
-.site-list-contact {
-  @media screen and (min-width: 768px) and (max-width: 1600px) {
-    display: block;
-    margin-left: 84px;
-    padding-top: 21px;
-    padding-bottom: 21px;
-  }
-  margin-left: auto;
-}
 .site-list-contact__item {
-  @media screen and (min-width: 768px) and (max-width: 1600px) {
+  @include tab {
     margin-bottom: 10px;
   }
 }
@@ -99,7 +99,7 @@
 .link-current {
   color: var(--acent-color);
   position: relative;
-  @media screen and (min-width: 678px) {
+  @media screen and (min-width: 768px) {
     &::after {
       content: "";
       display: block;

@@ -2,19 +2,16 @@
   background-color: var(--backgroud-color);
   padding-top: 60px;
   padding-bottom: 60px;
-  @include tab {
-  }
 }
 .footer__container {
   text-align: center;
-  @include desk {
-    display: flex;
-    justify-content: center;
-  }
   @include tab {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  @include desk {
+    flex-wrap: nowrap;
   }
 }
 // .footer-logo-item + .footer-logo-item {
