@@ -23,28 +23,26 @@
   justify-content: center;
 }
 .client-list__item {
-  width: 210px;
-  height: 92px;
+  width: calc(100% / 2 - 30px);
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px solid var(--color-icons);
   border-radius: 4px;
-
   @include tab {
-    width: 226px;
+    width: calc(100% / 3 - 30px);
   }
   @include desk {
     width: 170px;
   }
 }
-
 .client-list__logo {
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
-  height: 92px;
   width: 100%;
+  height: 92px;
+  border: 1px solid var(--color-icons);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {

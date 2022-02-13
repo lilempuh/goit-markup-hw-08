@@ -13,11 +13,12 @@
   // overflow-y: scroll;
   .container {
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
-.menu-mob__top {
-  margin-bottom: 302px;
-}
+
 .mobil-menu__close {
   display: block;
   margin-left: auto;
@@ -88,7 +89,4 @@
 
 .mobil-menu.is-hidden {
   left: 100%;
-}
-.menu-mob__bottom {
-  margin-top: auto;
 }

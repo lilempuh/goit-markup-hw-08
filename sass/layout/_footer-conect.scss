@@ -31,8 +31,7 @@
   color: var(--acent-second-color);
   margin-bottom: 20px;
   @include tab {
-    margin-left: auto;
-    margin-right: auto;
+    width: 450px;
   }
   @include desk {
     width: 358px;

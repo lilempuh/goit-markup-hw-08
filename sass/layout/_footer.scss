@@ -104,4 +104,7 @@
   @include tab {
     margin-right: 165px;
   }
+  @include desk {
+    margin-right: 0;
+  }
 }

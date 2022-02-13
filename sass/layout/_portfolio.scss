@@ -46,7 +46,6 @@
 .portfolio__second-list {
   @media screen and (min-width: 768px) {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin-left: calc(-1 * var(--portfolio-second-list-gap));
     margin-top: calc(-1 * var(--portfolio-second-list-gap));

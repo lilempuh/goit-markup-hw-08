@@ -10,18 +10,19 @@
 .team__title {
   @include font(700, 28px, 1.18, 0.03em);
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   @include desk {
     @include font(700, 36px, 1.17, 0.03em);
+    margin-bottom: 50px;
   }
 }
 .team-list {
+  margin-bottom: -30px;
   @include tab {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-right: -30px;
-    margin-bottom: -30px;
   }
   @include desk {
     display: flex;
@@ -32,10 +33,10 @@
 }
 .team-list__item {
   text-align: center;
+  margin-bottom: 30px;
   @include tab {
     width: calc(100% / 2 - 30px);
     margin-right: 30px;
-    margin-bottom: 30px;
   }
   @include desk {
     width: calc(100% / 4 - 30px);
