@@ -76,6 +76,9 @@
 }
 
 .portfolio__second-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   border: 1px solid #eeeeee;
   &:hover .portfolio__img-text,
   &:focus .portfolio__img-text {
@@ -85,6 +88,7 @@
 .portfolio__thumb {
   position: relative;
   overflow: hidden;
+  flex-grow: 1;
 }
 .portfolio__img-text {
   padding: 77px 24px;
@@ -106,11 +110,7 @@
 }
 .portfolio__second-card {
   padding: 20px 24px;
-}
-.portfolio__second-card-tab {
-  @include tab {
-    padding-bottom: 56px;
-  }
+  flex-grow: 1;
 }
 
 .portfolio__second-title {

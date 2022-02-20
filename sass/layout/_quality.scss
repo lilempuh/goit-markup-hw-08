@@ -66,6 +66,9 @@
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   margin-bottom: 10px;
+  @media screen and (max-width: 768px) {
+    text-align: center;
+  }
 }
 
 .quality-list__after-title {
